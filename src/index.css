@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Exile&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Extended+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sankofa+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+@import "tailwindcss";
+
+body {
+    background-color: rgb(228, 228, 228)
+}
+
+@media (min-width: 768px) {
+    .md-clip-path {
+        clip-path: polygon(100% 0%, 100% 100%, 20% 100%, 0% 0%);
+    }
+
+    .xl-clip-path {
+        clip-path: polygon(85% 0%, 100% 100%, 0% 100%, 0% 0%);
+    }
+}
+
+.font-exile {
+    font-family: 'Exile', cursive;
+}
+
+.font-major-mono-display {
+    font-family: 'Major Mono Display', monospace;
+}
+
+.font-libre {
+    font-family: 'Libre Barcode 39 Extended Text', cursive;
+}
+
+.font-sankofa {
+    font-family: 'Sankofa Display', cursive;
+}
+
+.font-train-one {
+    font-family: 'Train One', cursive;
+}
+
+/* @media (min-width: 800px) {
+    .my-element {
+        left: 360px;
+        height: 362px
+    }
+}
+
+@media (min-width: 820px) {
+    .my-element {
+        left: 370px;
+        height: 371px
+    }
+}
+
+@media (min-width: 834px) {
+    .my-element {
+        left: 375px;
+        height: 376px
+    }
+}
+
+@media (max-width: 884px) {
+    .my-element {
+        left: 398px;
+        height: 399px
+    }
+}
+
+@media (min-width: 1114px) {
+    .my-element {
+        left: 539px;
+        height: 493px
+    }
+}
+
+@media (max-width: 1280px) {
+    .my-element {
+        left: 629px;
+        height: 575px
+    }
+}
+
+@media (max-width: 1114px) {
+    .my-special {
+        height: 494px
+    }
+}
+
+@media (max-width: 1280px) {
+    .my-special {
+        height: 576px
+    }
+}
+
+@media (max-width: 1280px) {
+    .my-help {
+        left: 584px
+    }
+
+    .my-check {
+        margin-top: 20px
+    }
+} */
+
+/* @media (min-width: 800px) {
+    .md-clip-path {
+        clip-path: polygon(100% 0%, 100% 100%, 20% 100%, 0% 0%);
+    }
+
+    .xl-clip-path {
+        clip-path: polygon(85% 0%, 100% 100%, 0% 100%, 0% 0%);
+    }
+} */
