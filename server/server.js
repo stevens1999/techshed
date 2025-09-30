@@ -28,7 +28,7 @@ import bcrypt from 'bcryptjs';
 import cors from 'cors';
 import { initMongo, Users, Products, CartItems, Favorites, safeProduct } from './mongo.js';
 
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 3000;
 const FRONTEND_ORIGIN = process.env.FRONTEND_ORIGIN || 'http://localhost:5173';
 
 const app = express();
