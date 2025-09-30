@@ -1,5 +1,5 @@
 // API service for e-commerce backend
-const API_BASE = '/api';
+const API_BASE = 'https://techshed.onrender.com/api';
 
 // Helper function for API calls
 async function apiCall(endpoint, options = {}) {
