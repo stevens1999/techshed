@@ -293,5 +293,5 @@ app.use((err, req, res, next) => {
 
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`API server running on http://0.0.0.0:${PORT}`);
-  console.log(`CORS allowed origin: ${FRONTEND_ORIGIN}`);
+  console.log(`CORS allowed origin: ${PRODUCTION_ORIGIN}`);
 });
