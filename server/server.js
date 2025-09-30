@@ -29,17 +29,26 @@ import cors from 'cors';
 import { initMongo, Users, Products, CartItems, Favorites, safeProduct } from './mongo.js';
 
 const PORT = process.env.PORT || 3000;
-const FRONTEND_ORIGIN = process.env.FRONTEND_ORIGIN || 'http://localhost:5173';
 
+const PRODUCTION_ORIGIN = process.env.FRONTEND_ORIGIN || 'https://techshed.onrender.com';
+
+const allowedOrigins = [
+  'http://localhost:5173',           // For local development
+  PRODUCTION_ORIGIN   // Your deployed frontend URL
+];
 const app = express();
 await initMongo();
 
 // CORS configuration
 app.use(cors({
-  origin: FRONTEND_ORIGIN,
-  credentials: true,
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'X-User-Id'],
+  origin: (origin, callback) => {
+    if (allowedOrigins.includes(origin) || !origin) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+  credentials: true // Important for cookies/sessions
 }));
 
 app.use(express.json());
