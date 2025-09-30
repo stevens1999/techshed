@@ -28,7 +28,7 @@ import bcrypt from 'bcryptjs';
 import cors from 'cors';
 import { initMongo, Users, Products, CartItems, Favorites, safeProduct } from './mongo.js';
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT;
 
 const PRODUCTION_ORIGIN = process.env.FRONTEND_ORIGIN || 'https://techshed.onrender.com';
 
